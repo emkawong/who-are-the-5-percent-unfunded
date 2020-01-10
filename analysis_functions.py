@@ -66,3 +66,5 @@ def plot_with_fill(x, y, label):
     lines = plt.plot(x, y, label=label, lw=2)
     plt.fill_between(x, 0, y, alpha=0.2, color=lines[0].get_c())
     plt.legend(loc='best')
+
+    
