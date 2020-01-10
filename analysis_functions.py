@@ -50,8 +50,6 @@ def beta_rvs(df,samples):
         
     return beta_rvs
 
-fig,ax = plt.subplots()
-
 def graph_beta(function_dict,x):
 
     for label,function in function_dict.items(): 
