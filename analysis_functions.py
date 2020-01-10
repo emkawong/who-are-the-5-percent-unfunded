@@ -50,7 +50,7 @@ def beta_rvs(df,samples):
         
     return beta_rvs
 
-def graph_beta(function_dict,x):
+def graph_beta(function_dict,x,ax):
 
     for label,function in function_dict.items(): 
         plot_with_fill(x,function,label)
@@ -60,7 +60,7 @@ def graph_beta(function_dict,x):
         ax.annotate('Average Funded Rate',xy=(0.954122810959807,1600),xytext=(0.955,1450),)
         ax.axvline(0.954122810959807, color='b', linestyle=':')
         
-    return ax
+    return
 
 def plot_with_fill(x, y, label):
     lines = plt.plot(x, y, label=label, lw=2)
